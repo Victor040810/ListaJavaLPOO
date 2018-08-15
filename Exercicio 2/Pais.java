@@ -1,28 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package exer02;
 
-import java.util.ArrayList;
+package atividade2;
 
 /**
  *
- * @author Victor Fernandes
+ * @author Vycto
  */
 public class Pais {
     private String nome;
     private String capital;
     private float dimensao;
-    private ArrayList n = new ArrayList();
-    private String fronteira;
-    
-    public Pais(String nome, String capital, float dimensao){
-        this.capital = capital;
+    private String pfront;
+
+    public  void Pais(String nome, String capital, double dimensao, String paisfront) {
         this.nome = nome;
-        this.dimensao = dimensao;          
-    };
+        this.capital = capital;
+        this.dimensao = (float) dimensao;
+        this.pfront= pfront ;
+    }
+    
+   
+
+    public String getCapital() {
+        return capital;
+    }
+
+    public void setCapital(String capital) {
+        this.capital = capital;
+    }   
 
     public String getNome() {
         return nome;
@@ -32,41 +36,28 @@ public class Pais {
         this.nome = nome;
     }
 
-    public String getCapital() {
-        return capital;
-    }
-
-    public void setCapital(String capital) {
-        this.capital = capital;
-    }
-
-    public float getDimensao() {
+    public double getDimensao() {
         return dimensao;
     }
 
-    public void setDimensao(float dimensao) {
-        this.dimensao = dimensao;
+    public void setDimensao(double dimensao) {
+        this.dimensao = (float) dimensao;
+    }
+
+    public String getPfront() {
+        return pfront;
+    }
+
+    public void setPfront(String pfront ) {
+        this. pfront =  pfront;
     }
     
-    public boolean equals(Pais pais, Pais pais2){
-        if(pais == pais2){
-            return true;
-        }else
-        return false;
+    public void consulta(){
+        System.out.println(getNome());
+        System.out.println(getCapital());
+        System.out.println(getDimensao());
+        System.out.println(getPfront());
     }
     
-    public void fronteiras(String pais){
-        this.fronteira = pais;
-        n.add(this.fronteira);
-    };
-    
-    public void todasFronteiras(){
-        System.out.println(n);
-    }
-    
-    public void vizinhosComuns(Pais pais){
-        if (this.n.equals(pais.n)){
-        System.out.println(pais.n);
-                }
-    }
+   
 }
