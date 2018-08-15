@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Vycto
+ * @author Victor Fernandes 
  */
 public class Pprincipal {
     
