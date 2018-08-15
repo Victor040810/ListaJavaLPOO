@@ -3,7 +3,7 @@ package atividade2;
 
 /**
  *
- * @author Vycto
+ * @author Victor Fernandes 
  */
 public class Pais {
     private String nome;
